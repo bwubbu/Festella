@@ -811,6 +811,11 @@ Most Popular Style
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.most-popular .item:hover {
+  background-color: #252627;
 }
 
 .most-popular .item .item {
@@ -822,6 +827,10 @@ Most Popular Style
 
 .most-popular .item img {
   border-radius: 23px;
+}
+
+.most-popular .item img:hover {
+  opacity: 0.8;
 }
 
 .most-popular .item h4 {
