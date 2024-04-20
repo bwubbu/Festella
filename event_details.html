@@ -81,81 +81,80 @@
         <div class="page-content">
 
           <!-- ***** Featured Start ***** -->
+<div class="row">
+  <div class="col-lg-12">
+      <div class="feature-banner header-text">
           <div class="row">
-            <div class="col-lg-12">
-              <div class="feature-banner header-text">
+              <div class="col-lg-4">
+                  <img id="image1" src="" alt="" style="border-radius: 23px; height: 310px;">
+              </div>
+              <div class="col-lg-8">
+                  <div class="thumb">
+                      <img id="image2" src="" alt="" style="border-radius: 23px;">
+                      <a id="videoLink" href="#" target="_blank"><i class="fa fa-play"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ***** Featured End ***** -->
+
+  <!-- ***** Details Start ***** -->
+  <div class="game-details">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 id="eventName"></h2>
+        </div>
+        <div class="col-lg-12">
+            <div class="content">
                 <div class="row">
-                  <div class="col-lg-4">
-                    <img src="assets/images/details/Ado_Left.jpg" alt="" style="border-radius: 23px;; height: 310px;">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="thumb">
-                      <img src="assets/images/details/Ado_Wish.jpg" alt="" style="border-radius: 23px;">
-                      <a href="https://www.youtube.com/watch?v=AYjbDdsUPRI" target="_blank"><i class="fa fa-play"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Featured End ***** -->
-
-          <!-- ***** Details Start ***** -->
-          <div class="game-details">
-            <div class="row">
-              <div class="col-lg-12">
-                <h2>Ado First Wish</h2>
-              </div>
-              <div class="col-lg-12">
-                <div class="content">
-                  <div class="row">
                     <div class="col-lg-6">
-                      <div class="left-info">
-                        <div class="left">
-                          <h4>Ado - The First Wish</h4>
-                          <span>Concert</span>
+                        <div class="left-info">
+                            <div class="left">
+                                <h4 id="eventName2"></h4>
+                                <span id="eventCategory"></span>
+                            </div>
+                            <ul>
+                                <li><i class="fa fa-star"></i> <span id="eventRating"></span></li>
+                                <li><i class="fa fa-download"></i> <span id="eventDownloads"></span></li>
+                            </ul>
                         </div>
-                        <ul>
-                          <li><i class="fa fa-star"></i> 4.8</li>
-                          <li><i class="fa fa-download"></i> 2.3M</li>
-                        </ul>
-                      </div>
                     </div>
                     <div class="col-lg-6">
-                      <div class="right-info">
-                        <ul>
-                          <li><i class="fa fa-star"></i> 4.8</li>
-                          <li><i class="fa fa-download"></i> 2.3M</li>
-                          <li><i class="fa fa-server"></i> 36GB</li>
-                          <li><i class="fa fa-gamepad"></i> Solo Singer</li>
-                        </ul>
-                      </div>
+                        <div class="right-info">
+                            <ul>
+                                <li><i class="fa fa-star"></i> <span id="eventRating2"></span></li>
+                                <li><i class="fa fa-download"></i> <span id="eventDownloads2"></span></li>
+                                <li><i class="fa fa-server"></i> 36GB</li>
+                                <li><i class="fa fa-gamepad"></i> Solo Singer</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-4">
-                      <img src="assets/images/details/Ado_detail1.jpg" alt="" style="border-radius: 23px; margin-bottom: 30px;">
+                        <img id="image3" src="" alt="" style="border-radius: 23px; margin-bottom: 30px;">
                     </div>
                     <div class="col-lg-4">
-                      <img src="assets/images/details/Ado_detail2.jpg" alt="" style="border-radius: 23px; margin-bottom: 30px;">
+                        <img id="image4" src="" alt="" style="border-radius: 23px; margin-bottom: 30px;">
                     </div>
                     <div class="col-lg-4">
-                      <img src="assets/images/details/Ado_detail3.jpg" alt="" style="border-radius: 23px; margin-bottom: 30px;">
+                        <img id="image5" src="" alt="" style="border-radius: 23px; margin-bottom: 30px;">
                     </div>
                     <div class="col-lg-12">
-                      <p>If you ever wanted to watch Ado, the Japanese superstar musician featured in One Piece Film Red and SPY x FAMILY, your time has come! Crunchyroll is announcing alongside Ado today that her first world tour, “Wish” Powered by Crunchyroll, will head to the United States and Europe in early 2024. Crunchyroll fans can access the presale tickets here on December 11, 2023 at 7:00 a.m. PT with the code CRUNCHYROLL.
-
-                        General tickets will go on sale on December 15 at 7:00 a.m. PT.</p>
+                        <p id="eventDescription"></p>
                     </div>
                     <div class="col-lg-12">
-                      <div class="main-border-button">
-                        <a href="#">Buy the ticket now!</a>
-                      </div>
+                        <div class="main-border-button">
+                            <a id="ticketLink" href="#">Buy the ticket now!</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- ***** Details End ***** -->
+        </div>
+    </div>
+  </div>
+  <!-- ***** Details End ***** -->
+
 
           <!-- ***** Other Start ***** -->
           <div class="other-games">
@@ -257,6 +256,7 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="vendor/bootstrap/js/eventDetails.js"></script>
 
 
   </body>
