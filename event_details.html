@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/loading.css">
+
   </head>
 
 <body>
@@ -116,8 +118,8 @@
                                 <span id="eventCategory"></span>
                             </div>
                             <ul>
-                                <li><i class="fa fa-star"></i> <span id="eventRating"></span></li>
-                                <li><i class="fa fa-download"></i> <span id="eventDownloads"></span></li>
+                                <li><i class=""></i> <span id="eventRating"></span></li>
+                                <li><i class=""></i> <span id="eventDownloads"></span></li>
                             </ul>
                         </div>
                     </div>
@@ -143,7 +145,12 @@
                     <div class="col-lg-12">
                         <p id="eventDescription"></p>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12">    
+                      <div class="progress" style="margin-top: 20px;">
+                        <div id="ticketProgress" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                          <span class="progress-bar-text">0%</span>
+                        </div>
+                      </div>                                                          
                         <div class="main-border-button">
                             <a id="ticketLink" href="#">Buy the ticket now!</a>
                         </div>
@@ -153,7 +160,9 @@
         </div>
     </div>
   </div>
-  <!-- ***** Details End ***** -->
+ <!-- ***** Details End ***** -->
+
+
 
 
           <!-- ***** Other Start ***** -->
@@ -256,7 +265,7 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="vendor/bootstrap/js/eventDetails.js"></script>
+  <script src="assets/js/event/eventDetails.js"></script>
 
 
   </body>

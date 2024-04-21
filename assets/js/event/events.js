@@ -95,7 +95,7 @@ function populateEvents() {
           <h4>${events[i].name}<br><span>${events[i].category}</span></h4>
           <ul>
             <li><i class="fa fa-star"></i> ${events[i].rating}</li>
-            <li><i class="fa fa-download"></i> ${events[i].downloads}</li>
+            <li><i class="fa fa-ticket"></i> ${events[i].downloads}</li>
           </ul>
         </div>
       `;

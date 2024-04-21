@@ -859,7 +859,7 @@ Most Popular Style
 }
 
 .most-popular .item ul li:first-child i {
-  color: yellow;
+  color: rgb(208, 208, 76);
 }
 
 .most-popular .item ul li:last-child i {
@@ -1320,8 +1320,10 @@ Game Details Style
 .game-details .content .left-info {
   background-color: #27292a;
   border-radius: 23px;
-  padding: 30px;
+  padding: 15px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .game-details .content .left-info .left {
@@ -1329,7 +1331,7 @@ Game Details Style
 }
 
 .game-details .content .left-info h4 {
-  font-size: 15px;
+  font-size: 25px;
   display: block;
 }
 
@@ -1394,6 +1396,10 @@ Game Details Style
   text-align: center;
   width: 100%;
 } 
+
+.left-info{
+  font-size: 20px;
+}
 
 /* 
 ---------------------------------------------
