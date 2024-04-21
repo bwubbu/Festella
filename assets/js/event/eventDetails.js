@@ -14,7 +14,7 @@ const events = [
         ],
         videoLink: "https://www.youtube.com/watch?v=AYjbDdsUPRI",
         description: "If you ever wanted to watch Ado, the Japanese superstar musician featured in One Piece Film Red and SPY x FAMILY, your time has come! Crunchyroll is announcing alongside Ado today that her first world tour, 'Wish' Powered by Crunchyroll, will head to the United States and Europe in early 2024. Crunchyroll fans can access the presale tickets here on December 11, 2023, at 7:00 a.m. PT with the code CRUNCHYROLL. General tickets will go on sale on December 15 at 7:00 a.m. PT.",
-        ticketLink: "#",
+        ticketLink: "payment.html",
         ticketSold: "300",
         totalTicket: "500"
 
@@ -34,7 +34,7 @@ const events = [
         ],
         videoLink: "https://www.youtube.com/watch?v=hZDJjSHHGok",
         description: "Coldplay is a British rock band formed in London in 1996. The band's members are vocalist/pianist/guitarist Chris Martin, bassist Guy Berryman, guitarist Jonny Buckland, and drummer Will Champion. Coldplay has been one of the world's best-selling music artists, with over 100 million records sold worldwide.",
-        ticketLink: "#"
+        ticketLink: "payment.html"
     }
 ];
 
