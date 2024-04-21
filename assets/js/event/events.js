@@ -74,6 +74,47 @@ const events = [
 ];
 
 
+function initSearchFunctionality() {
+  const searchForm = document.getElementById('search');
+  const searchText = document.getElementById('searchText');
+  const searchResults = document.getElementById('searchResults');
+  let searchTimeout;
+
+  searchForm.addEventListener('input', function () {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+          const searchTerm = searchText.value.trim().toLowerCase();
+          const filteredEvents = events.filter(event =>
+              event.name.toLowerCase().includes(searchTerm)
+          );
+
+          if (filteredEvents.length > 0) {
+              searchResults.innerHTML = filteredEvents.map(event =>
+                  `<div onclick="redirectToEventDetails(${event.id})">${event.name}</div>`
+              ).join('');
+              searchResults.style.display = 'block';
+          } else {
+              searchResults.style.display = 'none';
+          }
+      }, 300); // Delay for 300ms to avoid frequent updates
+  });
+
+  document.addEventListener('click', function (event) {
+      if (!searchText.contains(event.target)) {
+          searchResults.style.display = 'none';
+      }
+  });
+
+  function redirectToEventDetails(eventId) {
+      window.location.href = `details_event${eventId}.html`;
+  }
+}
+
+// Call the function to initialize the search functionality
+initSearchFunctionality();
+
+
+
 function populateEvents() {
     const mostPopularContainer = document.getElementById('eventContainer');
 
