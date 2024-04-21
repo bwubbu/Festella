@@ -1742,3 +1742,10 @@ body {
     width: 16%;
   }
 }
+
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 9em; /* Adjust as needed */
+}

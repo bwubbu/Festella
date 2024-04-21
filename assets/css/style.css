@@ -8,13 +8,14 @@
 }
 
 body{
-    background-color: #1e1e1e;
-    background: linear-gradient(to right, #1e1e1e, #1e1e1e);
+    background: url(assets/images/loginbg.jpg) no-repeat;
     display: flex;
     align-items: center;
+    background-size: cover;
+    background-position: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container{
