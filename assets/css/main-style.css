@@ -1864,3 +1864,13 @@ body.details-page .header-area .main-nav .nav li a:hover {
   width: 100%;
   outline: none;
 }
+
+.search-input {
+  position: relative;
+}
+
+.search-input i.fa-search {
+  position: absolute;
+  transform: translateY(37%);
+  right: 10px; /* Adjust as needed */
+}
