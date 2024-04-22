@@ -65,5 +65,45 @@ const eventId = parseInt(getQueryParam('id'));
 populateEventDetails(eventId);
 
   
+// Function to fetch ticket details based on event ID
+function fetchTicketDetails(eventId) {
+    // Assuming you have an API endpoint to fetch ticket details based on event ID
+    // You can replace this with your actual API call
+    // For demonstration purposes, I'll use a simple array lookup
+    const event = events.find(event => event.id === eventId);
+    if (event) {
+        return {
+            ticketsSold: event.ticketSold || 0,
+            totalTickets: event.totalTicket || 1000000
+        };
+    } else {
+        // If event with given ID is not found, return default values
+        return {
+            ticketsSold: 0,
+            totalTickets: 1000000
+        };
+    }
+}
+
+// Function to update ticket availability status
+function updateTicketAvailability(eventId) {
+    // Fetch ticket details based on the event ID
+    const { ticketsSold, totalTickets } = fetchTicketDetails(eventId);
+
+    // Determine if tickets are sold out or canceled
+    const ticketsAvailable = ticketsSold < totalTickets;
+
+    // Get the ticket button element
+    const ticketButton = document.getElementById('ticketLink');
+
+    // If tickets are sold out or canceled, update button text and make it not clickable
+    if (!ticketsAvailable) {
+        ticketButton.classList.add('border-no-active'); // Add the border-no-active class
+        ticketButton.textContent = 'Ticket Sold Out!';
+        ticketButton.style.pointerEvents = 'none'; // Make the button not clickable
+    }
+}
 
 
+// Update ticket availability based on the event ID
+updateTicketAvailability(eventId);

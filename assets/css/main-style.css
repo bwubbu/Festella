@@ -882,11 +882,11 @@ Most Popular Style
 }
 
 .most-popular .item ul li:first-child i {
-  color: rgb(208, 208, 76);
+  color:#ec6090 ;
 }
 
 .most-popular .item ul li:last-child i {
-  color: #ec6090;
+  color: #ffffff;
 }
 
 .most-popular .main-button {
@@ -2772,4 +2772,19 @@ a.forum {
   color: #FEFEFE;
   font-weight: bold;
   font-size: 16px;
+}
+
+
+/* Disable clicking for the button with class "border-no-active" */
+.border-no-active a {
+  border-color: #666;
+  color: #666;
+  pointer-events: none; /* Disable pointer events */
+}
+
+/* Optional: Adjust appearance for the disabled button on hover */
+.border-no-active a:hover{
+  border-color: #666;
+  color: #666;
+  background-color: transparent;
 }
