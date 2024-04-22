@@ -58,12 +58,13 @@
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="forumhome.html">Community</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html" class="active">Streams</a></li>
-                        <li><a href="login.html">Sign In</a></li>
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="forumhome.html">Community</a></li>
+                      <li><a href="vendor-main.html">Vendor</a></li>
+                      <li id="guestNav"><a href="login.html">Sign In</a></li>
+
+                      <li id="userNav" style="display: none;"><a href="profile.html">Profile</a></li>
+                      <li id="userNav" style="display: none;"><a href="#" onclick="logout();">Sign Out</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -472,3 +473,4 @@
   </body>
 
 </html>
+
