@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+        <title>Festella</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/main-style.css">
+        <link rel="stylesheet" href="assets/css/owl.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+        <!-- Icon for the festella website-->
+        <link rel="icon" href="assets/images/event/cat.gif" type="image/icon type">
+      </head>
+<body class="forum">
+  <div class="wrapper">
+    <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="assets/images/logo.png" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Search End ***** -->
+                      <div class="search-input">
+                        <form id="search" action="#">
+                          <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                          <i class="fa fa-search"></i>
+                        </form>
+                      </div>
+                      <!-- ***** Search End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li><a href="index.html" class="active">Home</a></li>
+                          <li><a href="browse.html">Browse</a></li>
+                          <li><a href="forumhome.html">Community</a></li>
+                          <li><a href="details.html">Details</a></li>
+                          <li><a href="streams.html">Streams</a></li>
+                          <li><a href="login.html">Sign In</a></li>
+                      </ul>
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+    </header>
+    <div class="sidebar">
+      <h2>User Actions</h2>
+      <ul>
+        <li><a href="createpost.html">Create Post</a></li>
+        <li><a href="myforums.html">My Posts</a></li>
+        <li><a href="collablist.html">Collaborative Event List</a></li>
+      </ul>
+    </div>
+    <div class="containerForum">
+      <h1 class="forum">Create New Post</h1>
+      <form action="#" method="POST" class="post-form">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" rows="8" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
