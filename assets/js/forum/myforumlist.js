@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             image: "assets/images/event/Ado.jpeg",
             title: "Can't wait for the Ado concert!",
-            description: "Description of Post 1",
-            author: "User 1",
+            description: "Super excited to finally meet her! Who else is going?",
+            author: "farhan",
             date: "12 Dec 2020",
             lastReplyDate: "14 Dec 2020",
             upvotes: 20,
@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             image: "assets/images/event/Taylor.jpeg",
             title: "Day 2 of Taylor Swift's Eras Tour!",
-            description: "Description of Post 2",
-            author: "User 2",
+            description: "First day was a total blast! Can't wait for today's show!",
+            author: "farhan",
             date: "13 Dec 2020",
             lastReplyDate: "15 Dec 2020",
             upvotes: 25,
@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             image: "assets/images/event/Run.jpg",
             title: "How do I claim KL Marathon 2020 medal?",
-            description: "Description of Post 3",
-            author: "User 3",
+            description: "I completed the marathon but I'm not sure how to claim the medal. Can someone help?",
+            author: "farhan",
             date: "14 Dec 2020",
             lastReplyDate: "16 Dec 2020",
             upvotes: 30,

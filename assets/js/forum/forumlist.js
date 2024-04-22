@@ -5,11 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 image: "assets/images/event/Ado.jpeg",
                 title: "Can't wait for the Ado concert!",
-                description: "Description of Future Post 1",
-                author: "User 1",
+                description: "Super excited to finally meet her! Who else is going?",
+                author: "farhan",
                 date: "12 Dec 2020",
                 upvotes: 20,
                 replies: 7
+            },
+            {
+                image: "assets/images/event/Cold.jpg",
+                title: "Is it true Coldplay is coming to Malaysia?",
+                description: "After all the rumors, is it finally happening? Can't wait!",
+                author: "Lutfi",
+                date: "12 Dec 2020",
+                upvotes: 32,
+                replies: 12
             },
             // Add more future posts as needed
         ],
@@ -17,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 image: "assets/images/event/Taylor.jpeg",
                 title: "Day 2 of Taylor Swift's Eras Tour!",
-                description: "Description of Ongoing Post 1",
-                author: "User 2",
+                description: "First day was a total blast! Can't wait for today's show!",
+                author: "farhan",
                 date: "13 Dec 2020",
                 upvotes: 25,
                 replies: 10
@@ -29,13 +38,24 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 image: "assets/images/event/Run.jpg",
                 title: "How do I claim KL Marathon 2020 medal?",
-                description: "Description of Past Post 1",
-                author: "User 3",
+                description: "I completed the marathon but I'm not sure how to claim the medal. Can someone help?",
+                author: "farhan",
                 date: "14 Dec 2020",
                 upvotes: 30,
                 replies: 15
             },
             // Add more past posts as needed
+        ],
+        General: [
+            {
+                image: "assets/images/icon-qmark.png",
+                title: "Tips for my first festival!",
+                description: "Dear Festella community, what are your tips and hacks for a first-timer?",
+                author: "Wafiq",
+                date: "14 Dec 2020",
+                upvotes: 43,
+                replies: 42
+            }
         ]
     };
 

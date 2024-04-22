@@ -154,15 +154,45 @@
                         <div class="main-border-button">
                             <a id="ticketLink" href="#">Buy the ticket now!</a>
                         </div>
+                        <div class="side-by-side-buttons">
+                          <div class="main-border-button">
+                            <a id="collabLink" href="#">Add to your list</a>
+                          </div>
+                          <div class="main-border-button">
+                            <a id="shareLink" href="#">Share the event</a>
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
   </div>
  <!-- ***** Details End ***** -->
+ <div id="sharePopup" class="modal">
+  <div class="modal-content">
+    <div id="imageContainer" class="image-grid">
+      <!-- Images will be appended here -->
+  </div>
+      <span class="close">&times;</span>
+      <!-- Social sharing buttons and content -->
+  </div>
+</div>
+<!-- Popup Modal -->
+<div id="listPopup" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span> <!-- Close button -->
+    <div id="listPopupContent"> <!-- Content will be appended here --> </div>
+  </div>
+</div>
 
-
-
+<style>
+  .image-container {
+    text-align: center; /* Center align the text */
+  }
+  .image-container p {
+    margin-top: 5px; /* Add some space between the image and the text */
+  }
+</style>
 
           <!-- ***** Other Start ***** -->
           <div class="other-games">
@@ -265,7 +295,8 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/event/eventDetails.js"></script>
-
+  <script src="assets/js/socialpopup.js"></script>
+  <script src="assets/js/addtolistpopup.js"></script>
 
   </body>
 

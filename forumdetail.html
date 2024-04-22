@@ -22,6 +22,23 @@
     
         <!-- Icon for the festella website-->
         <link rel="icon" href="assets/images/event/cat.gif" type="image/icon type">
+        <style>
+            .hide {
+                display: none;
+            }
+            .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        </style>
       </head>
 
 <body class="forum">
@@ -75,46 +92,36 @@
         <div class="topic-container">
             <!--Original thread-->
             <div class="head">
-                <div class="forumtitle">Topic title</div>
+                <div class="forumtitle">Can't wait for the Ado concert!</div>
             </div>
 
             <div class="body">
                 <div class="authors">
-                    <div class="username"><a href="">Username</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>45</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div class="username"><a href="">Farhan</a></div>
+                    <img src="assets/images/ryoprofilepic.jpg" alt="">
                 </div>
                 <div class="content">
-                    Just a random content of a random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
-                    <br>
+                    Super excited to finally meet her! Who else is going?
                     <div class="comment">
-                        <button onclick="showComment()">Comment</button>
+                        <button onclick="toggleCommentArea('comment-area-1')">Comment</button>
                     </div>
                 </div>
             </div>
         </div>
 
-<!--Comment Area-->
-<div class="comment-area hide" id="comment-area">
-    <textarea name="comment" id="" placeholder="comment here ... "></textarea>
-    <input type="submit" value="submit">
-</div>
+        <!-- Comment Area 1 -->
+        <div class="comment-area hide" id="comment-area-1">
+            <textarea name="comment" id="" placeholder="Comment here..."></textarea>
+            <input type="submit" value="Submit">
+        </div>
 
 
         <!--Comments Section-->
         <div class="comments-container">
             <div class="body">
                 <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div class="username"><a href="">Rudzaidan</a></div>
+                    <img src="assets/images/profile.jpg" alt="">
                 </div>
                 <div class="content">
                     Just a comment of the above random topic.
@@ -124,22 +131,24 @@
                     <br>
                     <br>
                     <div class="comment">
-                        <button onclick="showReply()">Reply</button>
+                        <button onclick="toggleCommentArea('comment-area-2')">Comment</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="comment-area hide" id="comment-area-2">
+            <textarea name="comment" id="" placeholder="Comment here..."></textarea>
+            <input type="submit" value="Submit">
+        </div>
+
 
 
         <!--Another Comment With replies-->
         <div class="comments-container">
             <div class="body">
                 <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div class="username"><a href="">Lutfi</a></div>
+                    <img src="assets/images/profilepic.jpg" alt="">
                 </div>
                 <div class="content">
                     Just a comment of the above random topic.
@@ -149,18 +158,39 @@
                     <br>
                     <br>
                     <div class="comment">
-                        <button onclick="showReply()">Reply</button>
+                        <button onclick="toggleCommentArea('comment-area-3')">Comment</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="comment-area hide" id="comment-area-3">
+            <textarea name="comment" id="" placeholder="Comment here..."></textarea>
+            <input type="submit" value="Submit">
+        </div>
         <!--Reply Area-->
-        
+            <!-- Reply Area 1 -->
+    <div class="reply-area hide" id="reply-area-1">
+        <textarea name="reply" id="" placeholder="Reply here..."></textarea>
+        <input type="submit" value="Submit">
+    </div>
 
     </div>
     <footer>
         <span>&copy;  apen </span>
     </footer>
-    <script src="main.js"></script>
+    <script>
+function toggleCommentArea(commentAreaId) {
+            var commentArea = document.getElementById(commentAreaId);
+            if (commentArea.classList.contains('hide')) {
+                commentArea.classList.remove('hide');
+                commentArea.classList.add('fade-in');
+            } else {
+                commentArea.classList.remove('fade-in');
+                setTimeout(function() {
+                    commentArea.classList.add('hide');
+                }, 500); // Adjust this delay to match the animation duration
+            }
+        }
+    </script>
 </body>
 </html>

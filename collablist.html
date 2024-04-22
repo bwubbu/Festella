@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Festella</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/main-style.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="icon" href="assets/images/event/cat.gif" type="image/icon type">
-</head>
-<body class="forum">
-<div class="wrapper">
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="">
-                        </a>
-                        <div class="search-input">
-                            <form id="search" action="#">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+        <title>Festella</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/main-style.css">
+        <link rel="stylesheet" href="assets/css/owl.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+        <!-- Icon for the festella website-->
+        <link rel="icon" href="assets/images/event/cat.gif" type="image/icon type">
+      </head>
+
+      <body class="forum">
+        <div class="wrapper">
+          <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <a href="index.html" class="logo">
+                                <img src="assets/images/logo.png" alt="">
+                            </a>
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Search End ***** -->
+                            <div class="search-input">
+                              <form id="search" action="#">
                                 <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
                                 <i class="fa fa-search"></i>
-                            </form>
-                        </div>
-                        <ul class="nav">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="browse.html">Browse</a></li>
-                            <li><a href="forumhome.html">Community</a></li>
-                            <li><a href="details.html">Details</a></li>
-                            <li><a href="streams.html">Streams</a></li>
-                            <li><a href="login.html">Sign In</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                    </nav>
+                              </form>
+                            </div>
+                            <!-- ***** Search End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav">
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="browse.html">Browse</a></li>
+                                <li><a href="forumhome.html">Community</a></li>
+                                <li><a href="details.html">Details</a></li>
+                                <li><a href="streams.html">Streams</a></li>
+                                <li><a href="login.html">Sign In</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="sidebar">
-        <h2>User Actions</h2>
-        <ul>
-            <li><a href="createpost.html">Create Post</a></li>
-            <li><a href="myforums.html">My Posts</a></li>
-            <li><a href="collablist.html">Collaborative Event List</a></li>
-        </ul>
-    </div>
+          </header>
+          <div class="sidebar">
+            <h2>User Actions</h2>
+            <ul>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/009/664/135/original/pencil-icon-transparent-free-png.png" alt="Create Post" class="icon-image"><a href="createpost.html">Create Post</a></li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/009/664/135/original/pencil-icon-transparent-free-png.png" alt="My Posts" class="icon-image"><a href="myforums.html">My Posts</a></li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/009/664/135/original/pencil-icon-transparent-free-png.png" alt="Collaborative Event List" class="icon-image"><a href="collablist.html">Collaborative Event List</a></li>
+            </ul>
+            
+          </div>
     <div class="containerForum">
         <div class="most-popular">
             <div class="heading-section" id="groupMembersLink">
-                <h4><em>apen & the gang</em></h4>
+                <h4><em><a href="#" style="color: inherit;">apen & the gang</a></em></h4>
             </div>
             <div class="row" id="eventContainer">
                 <!-- List of group events will be dynamically populated here -->
             </div>
         </div>
-        <div class="main-border-button" style="margin: 2%;"><a href="#" >Add Event</a></div>
+        <div class="main-border-button" style="margin: 2%;"><a href="index.html" >Add Event</a></div>
         <div class="invite-users">
             <h2 style="margin:2%;">Invite Users</h2>
             <form id="invite-form">

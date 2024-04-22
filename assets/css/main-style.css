@@ -2110,7 +2110,7 @@ a.forum {
 }
 
 .post-form button {
-  background-color: #007bff;
+  background-color: #e75e8d;
   color: #FEFEFE;
   border: none;
   border-radius: 5px;
@@ -2120,7 +2120,8 @@ a.forum {
 }
 
 .post-form button:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: #e75e8d;
 }
 
 .event-list {
@@ -2154,7 +2155,7 @@ a.forum {
 
 #add-event-btn:hover,
 #invite-form button:hover {
-  background-color: #e75e8d;
+  background-color: #F99;
 }
 
 #email {
@@ -2199,15 +2200,28 @@ a.forum {
   background-color: #27292a;
   margin: auto; /* Center the modal horizontally */
   padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   border-radius: 30px;
-  width: 60%; /* Adjust the width as needed */
+  width: auto; /* Adjust the width as needed */
   max-width: 600px; /* Maximum width */
   position: absolute; /* Position absolute for vertical centering */
   top: 50%; /* Move the modal 50% from the top */
   left: 50%; /* Move the modal 50% from the left */
   transform: translate(-50%, -50%); /* Center the modal both vertically and horizontally */
+  
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
+.image-container {
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+.clickable-image {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+}
+
 
 /* Style for the close button */
 .close {
