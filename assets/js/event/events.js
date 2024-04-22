@@ -5,7 +5,7 @@ const events = [
       category: "Concert",
       image: "assets/images/event/Ado.jpeg",
       rating: 4.8,
-      downloads: "2.3M",
+      downloads: "1000",
       detailsPage: "details_event1.html"
     },
     {
@@ -13,8 +13,8 @@ const events = [
       name: "Coldplay",
       category: "Concert",
       image: "assets/images/event/Cold.jpg",
-      rating: 4.8,
-      downloads: "2.3M",
+      rating: 5,
+      downloads: "10, 000",
       detailsPage: "details_event2.html"
     },
     {
@@ -23,7 +23,7 @@ const events = [
       category: "Convention",
       image: "assets/images/event/Comiket.png",
       rating: 4.8,
-      downloads: "2.3M",
+      downloads: "100, 000",
       detailsPage: "details_event3.html"
     },
     {
@@ -31,8 +31,8 @@ const events = [
       name: "KL Marathon",
       category: "Sport",
       image: "assets/images/event/Run.jpg",
-      rating: 4.8,
-      downloads: "2.3M",
+      rating: 3.2,
+      downloads: "3000",
       detailsPage: "details_event4.html"
     },
     {
@@ -40,8 +40,8 @@ const events = [
       name: "E3 2023",
       category: "Convention",
       image: "assets/images/event/E3.jpeg",
-      rating: 4.8,
-      downloads: "2.3M",
+      rating: 2.0,
+      downloads: "50,000",
       detailsPage: "details_event5.html"
     },
     {
@@ -49,8 +49,8 @@ const events = [
       name: "Football",
       category: "Sport",
       image: "assets/images/event/Balls.jpg",
-      rating: 4.8,
-      downloads: "2.3M",
+      rating: 2.5,
+      downloads: "0.5M",
       detailsPage: "details_event6.html"
     },
     {
@@ -58,8 +58,8 @@ const events = [
       name: "CAFKL",
       category: "Convention",
       image: "assets/images/event/Cafkl.jpeg",
-      rating: 4.8,
-      downloads: "2.3M",
+      rating: 3.5,
+      downloads: "10, 000",
       detailsPage: "details_event7.html"
     },
     {
@@ -68,10 +68,51 @@ const events = [
       category: "Orchestra",
       image: "assets/images/event/Genshin.jpg",
       rating: 4.8,
-      downloads: "2.3M",
+      downloads: "500",
       detailsPage: "details_event8.html"
     }
 ];
+
+
+function initSearchFunctionality() {
+  const searchForm = document.getElementById('search');
+  const searchText = document.getElementById('searchText');
+  const searchResults = document.getElementById('searchResults');
+  let searchTimeout;
+
+  searchForm.addEventListener('input', function () {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+          const searchTerm = searchText.value.trim().toLowerCase();
+          const filteredEvents = events.filter(event =>
+              event.name.toLowerCase().includes(searchTerm)
+          );
+
+          if (filteredEvents.length > 0) {
+              searchResults.innerHTML = filteredEvents.map(event =>
+                  `<div onclick="redirectToEventDetails(${event.id})">${event.name}</div>`
+              ).join('');
+              searchResults.style.display = 'block';
+          } else {
+              searchResults.style.display = 'none';
+          }
+      }, 300); // Delay for 300ms to avoid frequent updates
+  });
+
+  document.addEventListener('click', function (event) {
+      if (!searchText.contains(event.target)) {
+          searchResults.style.display = 'none';
+      }
+  });
+
+  function redirectToEventDetails(eventId) {
+      window.location.href = `details_event${eventId}.html`;
+  }
+}
+
+// Call the function to initialize the search functionality
+initSearchFunctionality();
+
 
 
 function populateEvents() {

@@ -1,41 +1,24 @@
 const events = [
     {
         id: 1,
-        name: "Ado First Wish",
-        category: "Concert",
-        rating: 4.8,
-        downloads: "2.3M",
+        name: "HSR Party",
+        category: "Night Out",
+        rating: 4.0,
+        downloads: "200",
         images: [
-            "assets/images/details/Ado_Left.jpg",
-            "assets/images/details/Ado_Wish.jpg",
-            "assets/images/details/Ado_detail1.jpg",
-            "assets/images/details/Ado_detail2.jpg",
-            "assets/images/details/Ado_detail3.jpg"
+            "assets/images/pastEvent/HSR_Square.jpg",
+            "assets/images/pastEvent/HSR_detail3.jpg",
+            "assets/images/pastEvent/HSR_detail1.jpeg",
+            "assets/images/pastEvent/HSR_detail2.png",
+            "assets/images/pastEvent/HSR_Left.jpg"
         ],
-        videoLink: "https://www.youtube.com/watch?v=AYjbDdsUPRI",
-        description: "If you ever wanted to watch Ado, the Japanese superstar musician featured in One Piece Film Red and SPY x FAMILY, your time has come! Crunchyroll is announcing alongside Ado today that her first world tour, 'Wish' Powered by Crunchyroll, will head to the United States and Europe in early 2024. Crunchyroll fans can access the presale tickets here on December 11, 2023, at 7:00 a.m. PT with the code CRUNCHYROLL. General tickets will go on sale on December 15 at 7:00 a.m. PT.",
+        videoLink: "https://youtu.be/Cpq5uBSk434?si=dQHiUJNVO89Nr5oD",
+        description: "Penacony is located in the Asdana, a star system brimming with memoria, which has historically been one of the Macro Voids that leaked out from the Memory Zone.",
         ticketLink: "payment.html",
-        ticketSold: "300",
-        totalTicket: "500"
+        ticketSold: "200",
+        totalTicket: "200"
 
     },
-    {
-        id: 2,
-        name: "Coldplay",
-        category: "Concert",
-        rating: 4.5,
-        downloads: "1.8M",
-        images: [
-            "assets/images/details/Coldplay_Left.jpeg",
-            "assets/images/details/Coldplay_Color.jpg",
-            "assets/images/details/Coldplay_detail1.jpg",
-            "assets/images/details/Coldplay_detail2.jpg",
-            "assets/images/details/Coldplay_detail3.jpeg"
-        ],
-        videoLink: "https://www.youtube.com/watch?v=hZDJjSHHGok",
-        description: "Coldplay is a British rock band formed in London in 1996. The band's members are vocalist/pianist/guitarist Chris Martin, bassist Guy Berryman, guitarist Jonny Buckland, and drummer Will Champion. Coldplay has been one of the world's best-selling music artists, with over 100 million records sold worldwide.",
-        ticketLink: "payment.html"
-    }
 ];
 
 function populateEventDetails(eventId) {
@@ -80,3 +63,7 @@ const eventId = parseInt(getQueryParam('id'));
 
 // Populate the event details using the eventId
 populateEventDetails(eventId);
+
+  
+
+

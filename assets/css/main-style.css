@@ -93,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 ul {
   margin-bottom: 0px;
 }
@@ -2261,4 +2266,131 @@ a.forum {
   color: #FEFEFE;
   font-weight: bold;
   font-size: 16px;
+}
+
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 9em; /* Adjust as needed */
+}
+
+
+/*
+---------------------------------------------
+Search Result Style
+---------------------------------------------
+*/
+
+#searchResults {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 1000; /* Ensure it's above other elements */
+  max-height: 200px; /* Limit the height if needed */
+  overflow-y: auto; /* Add scroll if content exceeds max height */
+  width: 300px; /* Match the width of the search bar */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+#searchResults div {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#searchResults div:hover {
+  background-color: #f0f0f0;
+}
+
+.alert .textUser #searchResults {
+  display: block;
+
+}
+
+
+
+/* Override the active state background color for the Details link */
+body.details-page .header-area .main-nav .nav li a.active {
+  color: #666666 !important;
+}
+
+/* Hover effect for the Details link */
+body.details-page .header-area .main-nav .nav li a:hover {
+  color: #e75e8d !important; /* Pink color */
+}
+
+.dropbox {
+  align-items: center;
+  background: rgba(var(--color-background),.6);
+  border-radius: 4px;
+  color: rgb(var(--color-text-lighter));
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.3rem;
+  height: 200px;
+  justify-content: center;
+  line-height: 2rem;
+  margin-right: 20px;
+  outline-offset: -12px;
+  outline: 2px dashed rgba(var(--color-text),.2);
+  padding: 18px 20px;
+  position: relative;
+  transition: all 0.2s ease 0s;
+  vertical-align: text-top;
+  width: 200px;
+}
+
+.dropbox:hover {
+  background: rgba(var(--color-background),.5);
+}
+
+.dropbox p {
+  font-size: 1.2em;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.avatar {
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  display: inline-block;
+  height: 200px;
+  vertical-align: text-top;
+  width: 200px;
+}
+
+.input-file {
+  cursor: pointer;
+  height: 200px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.container input{
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input i.fa-search {
+  position: absolute;
+  transform: translateY(37%);
+  right: 10px; /* Adjust as needed */
 }

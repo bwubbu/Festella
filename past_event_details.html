@@ -15,7 +15,6 @@
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/Event-Review.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/main-style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
@@ -155,55 +154,85 @@
                         <div class="main-border-button">
                             <a id="ticketLink" href="payment.html">Buy the ticket now!</a>
                         </div>
-                        <div class="side-by-side-buttons">
-                          <div class="main-border-button">
-                            <a id="collabLink" href="#">Add to your list</a>
-                          </div>
-                          <div class="main-border-button">
-                            <a id="shareLink" href="#">Share the event</a>
-                        </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
   </div>
  <!-- ***** Details End ***** -->
- <div id="sharePopup" class="modal">
-  <div class="modal-content">
-    <div id="imageContainer" class="image-grid">
-      <!-- Images will be appended here -->
-  </div>
-      <span class="close">&times;</span>
-      <!-- Social sharing buttons and content -->
-  </div>
-</div>
-<!-- Popup Modal -->
-<div id="listPopup" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span> <!-- Close button -->
-    <div id="listPopupContent"> <!-- Content will be appended here --> </div>
-  </div>
-</div>
 
-<style>
-  .image-container {
-    text-align: center; /* Center align the text */
-  }
-  .image-container p {
-    margin-top: 5px; /* Add some space between the image and the text */
-  }
-</style>
+
+
 
           <!-- ***** Other Start ***** -->
           <div class="other-games">
             <div class="row">
               <div class="col-lg-12">
                 <div class="heading-section">
-                  <h4><em>Event Reviews</em></h4>
+                  <h4><em>Other Related</em> Events</h4>
                 </div>
               </div>
-              <div class = "container-event-review"></div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-02.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-03.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-02.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-03.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <!-- ***** Other End ***** -->
@@ -217,7 +246,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright Â© 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
           
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
         </div>
@@ -236,16 +265,7 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/event/eventDetails.js"></script>
-  <script src="assets/js/event-review.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    $(function(){
-
-      $(".other-games").load("event-review.html")
-    
-    });
-  </script>
+  <script src="assets/js/event/past_eventDetails.js"></script>
 
 
   </body>
