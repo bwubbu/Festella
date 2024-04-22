@@ -34,6 +34,22 @@
 	    $("header").removeClass("background-header");
 	  }
 	});
+
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+		var headerHeight = $('header').outerHeight();  // Using outerHeight to include padding and borders if any
+	
+		// Optional: Define a threshold before applying the style changes, e.g., 100 pixels
+		var scrollThreshold = 100;
+	
+		if (scroll >= scrollThreshold) {
+			$("header").addClass("background-header");
+		} else {
+			$("header").removeClass("background-header");
+		}
+	});
+	
+	
 	
 	$('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');

@@ -1,27 +1,30 @@
 body .page-content {
-  margin-top: 10px !important;
+  margin-top: 10px;
   background-color: #27292a;
-  padding: 10px !important;
-  border-radius: 23px !important;
+  padding: 10px ;
+  border-radius: 23px ;
 }
 
 #review-list {
-  background-color: #1f2122; /* Dark background color */
-  border-radius: 23px; /* Rounded corners */
-  padding: 30px; /* Padding inside the review list */
-  margin-top: 60px; /* Spacing from the top */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+  background-color: #1e1e1e; 
+  border-radius: 23px; 
+  padding: 30px; 
+  margin-top: 30px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); 
+  
 }
 
 
 #review-list .review {
-  border-bottom: 5px solid #27292a; /* Separator between reviews */
-  padding-bottom: 30px; /* Spacing between reviews */
-  margin-bottom: 30px; /* Spacing at the bottom of each review */
+  border-bottom: 5px solid #27292a; 
+  padding-bottom: 30px; 
+  margin-bottom: 30px; 
 }
 
 #review-list .review:last-child {
-  border-bottom: none; /* Remove bottom border from the last review */
+  border-bottom: none; 
+  max-height: 80%;
+  margin-bottom: 10px;
 }
 
 
@@ -49,21 +52,21 @@ body .page-content {
 }
 
 #review-list .username {
-  font-weight: bold; /* Bold username */
-  margin-bottom: 5px; /* Spacing below username */
-  color: #ddd; /* Username color */
+  font-weight: bold; 
+  margin-bottom: 5px; 
+  color: #ddd; 
 }
 
 #review-list .rating {
-  color: #fbff00; /* Yellow rating color */
-  margin-bottom: 5px; /* Spacing below rating */
+  color: #fbff00; 
+  margin-bottom: 5px; 
 }
 
 
 #review-list .media {
-  display: flex; /* Use flexbox for side-by-side display */
-  flex-wrap: wrap; /* Wrap items to new row when space is limited */
-  gap: 20px; /* Space between media items */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
   margin: 5px;
   margin-bottom: 5px;
 }
@@ -71,37 +74,42 @@ body .page-content {
 
 #review-list .media img,
 #review-list .media video {
-  max-width: calc(40% - 10px); /* Each media item takes 50% width with gap */
-  height: auto;
+  max-width: calc(40% - 10px); 
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+  margin-bottom: 15px; 
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  margin: 15px; /* Center media items */
+  margin: 15px; 
 }
+
 
 @media (max-width: 768px) {
   #review-list .media img,
   #review-list .media video {
-    max-width: 100%; /* On smaller screens, media takes full width */
+    max-width: 100%; 
   }
 }
 
-#review-list .comments p {
-  color: #ddd; /* Comment color */
-  margin-bottom: 10px; /* Spacing below comment */
-  font-size: 18px; /* Comment font size */
-  line-height: 1.5; /* Comment line height */
+#review-list .comments {
+  color: #ddd; 
+  margin-bottom: 10px; 
+  font-size: 18px; 
+  line-height: 1.5; 
 }
 
 #review-list .date {
-  font-size: 12px; /* Date font size */
-  color: #aaa; /* Date color */
+  font-size: 12px; 
+  color: #aaa; 
 }
 
 .container-event-review #review-form .user-rating {
   position: absolute;
   z-index: 1;
   top: 100%;
-  left: 50%; /* Center the popup horizontally */
+  left: 50%; 
   transform: translateX(-50%) scale(1);
   width: 6.55em;
   padding: 0.4em;
@@ -123,22 +131,27 @@ body .page-content {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .user-rating li {
   width: 1.15em;
   color: #ddd;
-  float: none; /* Remove float */
-  display: inline-block; /* Display as inline-block */
-  text-align: center; /* Center text */
+  float: none; 
+  display: inline-block; 
+  text-align: center; 
 }
 
 #review-form{
 
-  margin-bottom: 30px;
+  background-color: #1e1e1e; 
+  border-radius: 23px; 
+  padding: 30px;
+  margin-top: 30px; 
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); 
 }
 
 
@@ -149,6 +162,7 @@ body .page-content {
   gap: 10px;
   margin-top: 20px;
   width: 30%;
+  background: #2d2f35;
 }
 
 #videos {
@@ -157,8 +171,111 @@ body .page-content {
   gap: 10px;
   margin-top: 20px;
   width: 30%;
+  background: #2d2f35;
 }
 
+
+
+
+#review-form textarea {
+  background-color: #dddddd;
+  vertical-align: middle;
+  color: #666666;
+  padding: 1em;
+  margin-left: 1.3em;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 50%;
+  height: 100px;
+  transition: all 0.2s;
+}
+
+#review-form textarea:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+#review-form textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #333333;
+}
+
+#review-form .rating {
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+  min-width: 2.25em;
+  padding: 0.25em;
+  margin-left: 1.5em;
+  margin-bottom: 2.5em;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 150%;
+  background: #eee;
+  box-shadow: 0 0 0 0.5em #fff, 0 1.5em 0 0.5em #fff, 0 2em 0.5em 0.25em rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: all 100ms;
+  ;
+}
+
+#review-form .rating.hide {
+  color: rgba(0, 0, 0, 0);
+}
+
+#review-form .rating:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -0.25em;
+  border: 0.25em solid transparent;
+  border-top-color: #eee;;
+}
+
+#review-form .rating:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0.25em;
+  margin-top: 0.156em;
+  color: #eb0;
+  font-size: 100%;
+  text-align: center;
+}
+
+#review-form .user-rating i {
+  transition: all 100ms cubic-bezier(0.07, 0.77, 0.46, 1.47);
+  display: flex;
+  justify-content: center;
+  color: #ddd; 
+  margin-top: 10px;
+  font-size: 120%;
+}
+
+/* Hover and active states */
+#review-form .user-rating li:hover,
+#review-form .user-rating li:hover i {
+  color: #eb0;
+}
+
+#review-form .user-rating li:hover i,
+#review-form .user-rating li:hover ~ li i {
+  transform: scale(1.1);
+}
+
+#review-form .user-rating li:active i,
+#review-form .user-rating li:active ~ li i {
+  transform: scale(0.9);
+}
 
 .submit {
   appearance: none;
@@ -200,101 +317,4 @@ body .page-content {
 .submit:active {
   box-shadow: none;
   transform: translateY(0);
-}
-
-#review-form textarea {
-  background-color: #dddddd;
-  vertical-align: middle;
-  color: #666666;
-  padding: 1em;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  outline: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
-  width: 50%;
-  height: 100px;
-  transition: all 0.2s;
-}
-
-#review-form textarea:hover {
-  cursor: pointer;
-  background-color: #eeeeee;
-}
-
-#review-form textarea:focus {
-  cursor: text;
-  color: #333333;
-  background-color: white;
-  border-color: #333333;
-}
-
-#review-form .rating {
-  position: relative;
-  border-radius: 10px;
-  display: inline-block;
-  min-width: 2.25em;
-  padding: 0.25em;
-  margin: 2.5em;
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 150%;
-  background: #eee;
-  box-shadow: 0 0 0 0.5em #fff, 0 1.5em 0 0.5em #fff, 0 2em 0.5em 0.25em rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  transition: all 100ms;
-}
-
-#review-form .rating.hide {
-  color: rgba(0, 0, 0, 0);
-}
-
-#review-form .rating:after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -0.25em;
-  border: 0.25em solid transparent;
-  border-top-color: #eee;
-}
-
-#review-form .rating:before {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 0.25em;
-  margin-top: 0.156em;
-  color: #eb0;
-  font-size: 100%;
-  text-align: center;
-}
-
-#review-form .user-rating i {
-  transition: all 100ms cubic-bezier(0.07, 0.77, 0.46, 1.47);
-  display: flex;
-  justify-content: center;
-  color: #ddd; /* Added color here for consistent color */
-  margin-top: 10px;
-  font-size: 120%;
-}
-
-/* Hover and active states */
-#review-form .user-rating li:hover,
-#review-form .user-rating li:hover i {
-  color: #eb0;
-}
-
-#review-form .user-rating li:hover i,
-#review-form .user-rating li:hover ~ li i {
-  transform: scale(1.1);
-}
-
-#review-form .user-rating li:active i,
-#review-form .user-rating li:active ~ li i {
-  transform: scale(0.9);
 }

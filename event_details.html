@@ -61,11 +61,12 @@
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="userindex.html">Home</a></li>
                         <li><a href="browse.html">Browse</a></li>
+                        <li><a href="forumhome.html">Community</a></li>
                         <li><a href="details.html" class="active">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="vendor-main.html">Vendors</a></li>
+                        <li><a href="profile.html">Profile <img src="assets/images/profile.jpg" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -127,10 +128,10 @@
                     <div class="col-lg-6">
                         <div class="right-info">
                             <ul>
-                                <li><i class="fa fa-star"></i> <span id="eventRating2"></span></li>
-                                <li><i class="fa fa-download"></i> <span id="eventDownloads2"></span></li>
-                                <li><i class="fa fa-server"></i> 36GB</li>
-                                <li><i class="fa fa-gamepad"></i> Solo Singer</li>
+                                <li><i class="fa fa-eye"></i> <span id="eventRating2"></span></li>
+                                <li><i class="fa fa-ticket"></i> <span id="eventDownloads2"></span></li>
+                                <li><i class="fa fa-bar-chart"></i> 1</li>
+                                <li><i class="fa fa-microphone"></i> Solo Singer</li>
                             </ul>
                         </div>
                     </div>
@@ -203,8 +204,41 @@
                   <h4><em>Event Reviews</em></h4>
                 </div>
               </div>
-              <div class = "container-event-review"></div>
+              <div class="container-event-review">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section id="review-list">
+                            <div id="review-sort">
+                                <label for="sort-review"><p>Sort By:</p></label><br>
+                                <select id="sort-review" name="sort">
+                                    <option id="sort-review-lowest" value="lowest-rated">Lowest Rated</option>
+                                    <option id="sort-review-recent" value="most-recent">Most Recent</option>
+                                    <option id="sort-review-highest" value="highest-rated">Highest Rated</option>
+                                </select>
+                            </div>
+                            <div id="reviews" class="reviews-container">
+                                <!-- Reviews will be populated here -->
+                            </div>
+                        </section>
+            
+                        <section id="review-form">
+                            <h4>Share your experiences here</h4><br>
+                            <form id="submit-review-form">
+                                <label for="star-rating"><p>Rating:</p></label>
+                                <div class="rating fa fa-star" align="center"><h1 align="center"><font color = "#a0a0a0">0</font></h1></div><br>
+                                <label for="review"><p>Review:</p></label>
+                                <textarea id="review-text" name="review" rows="4" required>Write here...</textarea><br><br>
+                                <label for="images" class="label"><p>Upload Images:</p></label>
+                                <span style="color: #666666"><input type="file" id="images" name="images" accept="image/*" multiple></span><br>
+                                <label for="videos" class="label"><p>Upload Videos:</p></label>
+                                <span style="color: #666666"><input type="file" id="videos" name="videos" accept="video/*"></span><br><br>
+                                <button type="submit" class="submit"><p>Submit Review</p></button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
             </div>
+    
           </div>
           <!-- ***** Other End ***** -->
 
@@ -241,13 +275,6 @@
   <script src="assets/js/addtolistpopup.js"></script>
   <script src="assets/js/socialpopup.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    $(function(){
-
-      $(".other-games").load("event-review.html")
-    
-    });
-  </script>
 
 
   </body>

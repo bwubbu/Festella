@@ -59,130 +59,277 @@ $(document).on('click', function() {
 // Sample reviews data (you can replace this with actual data from backend)
 var reviewsData = [
   {
+    eventId: 1, // Linking this review to an event
     username: "User1",
     rating: 4,
     images: ["assets/images/event/RandomEvent1.jpg","assets/images/event/RandomEvent2.jpeg"],
-    videos: ["video1.mp4"],
+    videos: ["assets/videos/event/RandomVideo1.mp4"],
     comments: ["What an amazing event!"],
-    date: "2024-04-16"
-  },
+    date: "2022-01-13"
+},
   {
+    eventId: 1,
     username: "User2",
     rating: 3,
     images: ["assets/images/event/RandomEvent3.jpg"],
     videos: [],
     comments: ["I wish the venue is cooler"],
-    date: "2024-04-15"
+    date: "2023-11-13"
   },
   {
+
+    eventId: 1,
     username: "User3",
     rating: 5,
     images: ["assets/images/event/RandomEvent4.jpg"],
-    videos: ["video2.mp4"],
+    videos: ["assets/videos/event/RandomVideo2.mp4"],
+    comments: ["Best event ever!!!!"],
+    date: "2009-08-29"
+  },
+
+  {
+    eventId: 2, // Linking this review to an event
+    username: "User1",
+    rating: 1,
+    images: ["assets/images/event/RandomEvent5.webp"],
+    videos: ["assets/videos/event/RandomVideo3.mp4"],
+    comments: ["he event had a great concept, but it was poorly executed"],
+    date: "2019-01-01"
+},
+  {
+    eventId: 2,
+    username: "User2",
+    rating: 2,
+    images: ["assets/images/event/RandomEvent6.jpg","assets/images/event/RandomEvent7.jpg"],
+    videos: [],
+    comments: ["Not only was this event entertaining, but it was also educational. The guest speakers shared valuable insights, and I left feeling inspired and enlightened"],
+    date: "2021-04-21"
+  },
+  {
+
+    eventId: 2,
+    username: "User3",
+    rating: 4,
+    images: ["assets/images/event/RandomEvent8.jpg"],
+    videos: ["assets/videos/event/RandomVideo4.mp4"],
+    comments: ["Best event ever!!!!"],
+    date: "2020-08-30"
+  },
+
+  {
+    eventId: 2,
+    username: "User4",
+    rating: 2,
+    images: ["assets/images/event/RandomEvent9.jpg"],
+    videos: ["assets/videos/event/RandomVideo4.mp4"],
+    comments: ["The event was marred by technical issues, especially with the sound system. I"],
+    date: "2011-08-21"
+  },
+
+  {
+    eventId: 3, // Linking this review to an event
+    username: "User1",
+    rating: 4,
+    images: ["assets/images/event/RandomEvent10.jpg"],
+    videos: ["assets/videos/event/RandomVideo5.mp4"],
+    comments: ["What an amazing event!"],
+    date: "2017-03-05"
+},
+  {
+    eventId: 3,
+    username: "User2",
+    rating: 3,
+    images: ["assets/images/event/RandomEvent11.jpg"],
+    videos: ["assets/videos/event/RandomVideo6.mp4"],
+    comments: ["The venue was breathtaking, but the lack of clean restroom facilities was disappointing."],
+    date: "2019-10-02"
+  },
+  {
+
+    eventId: 3,
+    username: "User3",
+    rating: 5,
+    images: ["assets/images/event/RandomEvent12.jpg"],
+    videos: ["assets/videos/event/RandomVideo7.mp4"],
+    comments: ["Impressed with how well-organized this event was."],
+    date: "2024-08-20"
+  },
+
+  {
+    eventId: 4, // Linking this review to an event
+    username: "User1",
+    rating: 4,
+    images: ["assets/images/event/RandomEvent13.webp"],
+    videos: ["assets/videos/event/RandomVideo5.mp4"],
+    comments: ["This event truly brought the community together."],
+    date: "2012-11-17"
+},
+  {
+    eventId: 4,
+    username: "User2",
+    rating: 3,
+    images: ["assets/images/event/RandomEvent14.jpg"],
+    videos: ["assets/videos/event/RandomVideo6.mp4"],
+    comments: ["Fun event with lots to see and do, but it was way too crowded"],
+    date: "2017-02-02"
+  },
+  {
+
+    eventId: 4,
+    username: "User3",
+    rating: 5,
+    images: ["assets/images/event/RandomEvent15.jpg"],
+    videos: ["assets/videos/event/RandomVideo7.mp4"],
     comments: ["Best event ever!!!!"],
     date: "2024-04-14"
+  },
+
+  {
+    eventId: 5, // Linking this review to an event
+    username: "User1",
+    rating: 5,
+    images: ["assets/images/event/RandomEvent16.jpg"],
+    videos: ["assets/videos/event/RandomVideo5.mp4"],
+    comments: ["Whether you're young or young at heart, this event has something for everyone."],
+    date: "2019-03-04"
+},
+  {
+    eventId: 5,
+    username: "User2",
+    rating: 2,
+    images: ["assets/images/event/RandomEvent1.jpg"],
+    videos: ["assets/videos/event/RandomVideo6.mp4"],
+    comments: ["Was expecting a family-friendly environment, but some parts of the event were not suitable for kids. "],
+    date: "2017-11-08"
+  },
+  {
+
+    eventId: 5,
+    username: "User3",
+    rating: 5,
+    images: ["assets/images/event/RandomEvent2.jpeg"],
+    videos: ["assets/videos/event/RandomVideo7.mp4"],
+    comments: ["I love web programming :)"],
+    date: "2021-08-30"
+  },
+
+  {
+    eventId: 6, // Linking this review to an event
+    username: "User1",
+    rating: 4,
+    images: ["assets/images/event/RandomEvent3.jpg"],
+    videos: ["assets/videos/event/RandomVideo5.mp4"],
+    comments: ["Sometimes you just need to listen"],
+    date: "2019-10-28"
+},
+  {
+    eventId: 6,
+    username: "User2",
+    rating: 3,
+    images: ["assets/images/event/RandomEvent4.jpg"],
+    videos: ["assets/videos/event/RandomVideo6.mp4"],
+    comments: ["She is not coming back"],
+    date: "2017-07-30"
+  },
+  {
+
+    eventId: 6,
+    username: "User3",
+    rating: 4,
+    images: ["assets/images/event/RandomEvent5.jpg"],
+    videos: ["assets/videos/event/RandomVideo7.mp4"],
+    comments: ["As a foodie, I was in heaven at this event! "],
+    date: "2016-06-21"
   }
 ];
 
-// Function to render reviews
+// Get the value of a query parameter from a URL
+function getQueryParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+// Render reviews for a specific event
+function populateReviews(eventId) {
+  const reviews = reviewsData.filter(review => review.eventId === eventId);
+  renderReviews(reviews);
+}
+
+// Render reviews in the DOM
 function renderReviews(reviews) {
-  var reviewsContainer = $('#reviews');
-  reviewsContainer.empty(); // Clear previous reviews
+  const reviewsContainer = document.getElementById('reviews');
+  reviewsContainer.innerHTML = ''; // Clear previous content
+  reviews.forEach(review => {
+      reviewsContainer.innerHTML += createReviewHTML(review);
+  });
+}
 
-  $.each(reviews, function(index, review) {
-    var reviewHTML = `
+// Generate HTML for each review
+function createReviewHTML(review) {
+  return `
       <div class="review">
-        <div class="username">${review.username}</div>
-        <div class="rating">Rating: ${review.rating}/5</div>
-        <div class="media">
-          ${renderMedia(review.images, 'image')}
-          ${renderMedia(review.videos, 'video')}
-        </div>
-        <div class="comments">
-          ${renderComments(review.comments)}
-        </div>
-        <div class="date">Date: ${review.date}</div>
+          <div class="username">${review.username}</div>
+          <div class="rating" data-rating="${review.rating}">Rating: ${review.rating}/5</div>
+          <div class="media">${renderMedia(review.images, 'image')}${renderMedia(review.videos, 'video')}</div>
+          <div class="comments">${review.comments.join('<br>')}</div>
+          <div class="date">Date: ${review.date}</div>
       </div>
-    `;
-    reviewsContainer.append(reviewHTML);
-  });
+  `;
 }
 
-// Function to render media (images or videos)
+// Render media elements for each review
 function renderMedia(mediaList, type) {
-  if (mediaList.length === 0) return '';
-
-  var mediaHTML = '';
-  $.each(mediaList, function(index, media) {
-    if (type === 'image') {
-      mediaHTML += `<img src="${media}" alt="${type}">`;
-    } else if (type === 'video') {
-      mediaHTML += `<video controls><source src="${media}" type="video/mp4"></video>`;
-    }
-  });
-  return mediaHTML;
+  return mediaList.map(media => type === 'image' ? `<img src="${media}" alt="Image">` : `<video controls><source src="${media}" type="video/mp4"></video>`).join('');
 }
 
-
-
-// Function to render comments
-function renderComments(comments) {
-  if (comments.length === 0) return '';
-
-  var commentsHTML = '';
-  $.each(comments, function(index, comment) {
-    commentsHTML += `<p>${comment}</p>`;
-  });
-  return commentsHTML;
-}
-
-// Initial render
-renderReviews(reviewsData);
-
-// Sorting reviews
-$('#sort-review').on('change', function() {
-  var sortOption = $(this).val();
-  var sortedReviews = [];
-
+// Sort reviews based on user selection
+function sortReviews(sortOption, reviews) {
   if (sortOption === 'lowest-rated') {
-    sortedReviews = reviewsData.slice().sort((a, b) => a.rating - b.rating);
-  } else if (sortOption === 'most-recent') {
-    sortedReviews = reviewsData.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+      reviews.sort((a, b) => a.rating - b.rating);
   } else if (sortOption === 'highest-rated') {
-    sortedReviews = reviewsData.slice().sort((a, b) => b.rating - a.rating);
+      reviews.sort((a, b) => b.rating - a.rating);
+  } else {
+      reviews.sort((a, b) => new Date(b.date) - new Date(a.date));
   }
+  renderReviews(reviews);
+}
 
-  renderReviews(sortedReviews);
+// Event listeners to handle document ready and interactions
+document.addEventListener('DOMContentLoaded', function() {
+  const eventId = parseInt(getQueryParam('id'));
+  populateReviews(eventId);
+
+  document.getElementById('sort-review').addEventListener('change', function() {
+      sortReviews(this.value, reviewsData.filter(review => review.eventId === eventId));
+  });
+
+  document.addEventListener('click', function(e) {
+      if (e.target.matches('.rating')) {
+          let ratingElement = e.target;
+          let ratingValue = ratingElement.dataset.rating;
+          // This example could be expanded to a real interactive rating feature
+          alert(`Rating selected: ${ratingValue}`);
+      }
+  });
+
+  document.getElementById('submit-review-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      submitReview(eventId);
+  });
 });
 
-// Submit review form
-$('#submit-review-form').on('submit', function(e) {
-  e.preventDefault();
-
-  var username = 'New User'; // You can replace this with actual logged-in user's username
-  var rating = parseInt($('.rating').text());
-  var images = []; // Add uploaded image paths here
-  var videos = []; // Add uploaded video paths here
-  var comments = []; // New review won't have comments initially
-  var date = new Date().toLocaleDateString();
-
-  // Create new review object
-  var newReview = {
-    username: username,
-    rating: rating,
-    images: images,
-    videos: videos,
-    comments: comments,
-    date: date
+// Submit a new review
+function submitReview(eventId) {
+  const newReview = {
+      eventId: eventId,
+      username: 'New User',
+      rating: parseInt(document.querySelector('.rating h1').textContent),
+      images: [],
+      videos: [],
+      comments: [document.getElementById('review-text').value],
+      date: new Date().toISOString().split('T')[0]
   };
-
-  // Add new review to reviewsData array
-  reviewsData.unshift(newReview);
-
-  // Re-render reviews
-  renderReviews(reviewsData);
-
-  // Clear form fields
-  $('.rating').text('0');
-  $('#review-text').val('');
-});
+  reviewsData.push(newReview);
+  populateReviews(eventId); // Update reviews display
+  document.getElementById('review-text').value = ''; // Clear form fields
+}
