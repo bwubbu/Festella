@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Festella</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/vendorPage.css"> -->
+
+    <script src="assets/js/vendorPage.js"></script>
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Search End ***** -->
+                        <div class="search-input">
+                            <form id="search" action="#">
+                                <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword"
+                                    onkeypress="handle" />
+                                <i class="fa fa-search"></i>
+                            </form>
+                        </div>
+                        <!-- ***** Search End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="browse.html">Browse</a></li>
+                            <li><a href="details.html">Details</a></li>
+                            <li><a href="streams.html">Streams</a></li>
+                            <li><a href="login.html">Sign In</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-content">
+                    <div class="back">
+                        <button onclick="goBack()">&larrhk; Return</button>
+                    </div>
+                    <div class="form-register">
+                        <h2>Personal Details</h2>
+                        <form>
+                            <div class="form-row">
+                                <div>
+                                    <label for="vendorFirstName">First Name</label>
+                                    <input type="text" id="vendorFirstName" placeholder="First Name" required>
+                                </div>
+                                <div>
+                                    <label for="vendorLastName">Last Name</label>
+                                    <input type="text" id="vendorLastName" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div>
+                                    <label for="vendorEmail">Email</label>
+                                    <input type="email" id="vendorEmail" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <label for="vendorPhone">Phone</label>
+                                    <input type="text" id="vendorPhone" placeholder="Phone" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="vendorAddress">Address</label>
+                                <textarea id="vendorAddress" placeholder="Address" required></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div>
+                                    <label for="vendorCity">City</label>
+                                    <input type="text" id="vendorCity" placeholder="City" required>
+                                </div>
+                                <div>
+                                    <label for="vendorState">State</label>
+                                    <input type="text" id="vendorState" placeholder="State" required>
+                                </div>
+                            </div>
+                            <h2>Business Details</h2>
+                            <div>
+                                <label for="vendorService">Service</label>
+                                <input type="text" id="vendorService" placeholder="Service" required>
+                            </div>
+                            <div>
+                                <label for="vendorAvailability">Availability</label>
+                                <input type="text" id="vendorAvailability" placeholder="Availability" required>
+                            </div>
+                            <div class="agreement">
+                                <input type="checkbox" id="vendorAgreement" required>
+                                <label for="vendorAgreement">I agree to the terms and conditions</label>
+                            </div>
+                            <button type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
