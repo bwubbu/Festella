@@ -151,5 +151,68 @@ function populateEvents() {
 }
 
 
-populateEvents();
+
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+  }
+  return array;
+}
+
+function randomAssign() {
+  const shuffledEvents = shuffleArray([...events]); // Clone and shuffle the events array
+  const mostPopularContainer = document.getElementById('eventContainer');
+  mostPopularContainer.innerHTML = ''; // Clear the container before populating
+
+  let row = document.createElement('div');
+  row.className = 'row';
+  mostPopularContainer.appendChild(row);
+
+  // Loop through shuffled events array
+  shuffledEvents.forEach((event, i) => {
+    // Create a new column for every event
+    const col = document.createElement('div');
+    col.className = 'col-lg-3 col-sm-6';
+    col.innerHTML = `
+      <div class="item" onclick="redirectToEventDetails(${event.id})">
+        <img src="${event.image}" alt="${event.name}">
+        <h4>${event.name}<br><span>${event.category}</span></h4>
+        <ul>
+          <li><i class="fa fa-eye"></i> ${event.rating}</li>
+          <li><i class="fa fa-download"></i> ${event.downloads}</li>
+        </ul>
+      </div>
+    `;
+
+    // Append column to row
+    row.appendChild(col);
+
+    // Check if the row is filled with 4 events, create a new row
+    if ((i + 1) % 4 === 0 && i + 1 < shuffledEvents.length) {
+      row = document.createElement('div');
+      row.className = 'row';
+      mostPopularContainer.appendChild(row);
+    }
+  });
+}
+
+
+
+
+function initPageEvents() {
+  // This could also be a hidden input or a meta tag if you prefer
+  const isRandomPage = document.body.classList.contains('random-events-page');
+
+  if (isRandomPage) {
+    randomAssign();
+  } else {
+    populateEvents();
+  }
+}
+
+// Call this function on DOMContentLoaded event or at the end of the body tag in HTML
+initPageEvents();
+
                   
