@@ -80,7 +80,3 @@ const eventId = parseInt(getQueryParam('id'));
 
 // Populate the event details using the eventId
 populateEventDetails(eventId);
-
-  
-
-
