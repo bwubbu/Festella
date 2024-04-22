@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <p>${post.description}</p>
                             </div>
                             <div class="subforum-stats subforum-column center">
-                                <span>${post.upvotes} 🔺<br /> ${post.replies} 💬</span>
+                                <span>${post.replies} 💬</span>
                             </div>
                             <div class="subforum-info subforum-column-text">
                                 by <a class="forum" href="">${post.author}</a> 
