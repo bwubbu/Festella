@@ -14,7 +14,18 @@
     <link rel="icon" href="assets/images/event/cat.gif" type="image/icon type">
 </head>
 <body class="forum">
-<div class="wrapper">
+              <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -30,13 +41,14 @@
                             </form>
                         </div>
                         <ul class="nav">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="browse.html">Browse</a></li>
-                            <li><a href="forumhome.html">Community</a></li>
-                            <li><a href="details.html">Details</a></li>
-                            <li><a href="streams.html">Streams</a></li>
-                            <li><a href="login.html">Sign In</a></li>
-                        </ul>
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="browse.html">Browse</a></li>
+                                <li><a href="forumhome.html" class="active">Community</a></li>
+                                <li><a href="details.html">Details</a></li>
+                                <li><a href="streams.html">Streams</a></li>
+                                <li><a href="login.html">Sign In</a></li>
+                            </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
@@ -48,9 +60,9 @@
     <div class="sidebar">
         <h2>User Actions</h2>
         <ul>
-            <li><a href="createpost.html">Create Post</a></li>
-            <li><a href="myforums.html">My Posts</a></li>
-            <li><a href="collablist.html">Collaborative Event List</a></li>
+            <li><img src="assets/images/logo-pencil.png" alt="Create Post" class="icon-image"><a href="createpost.html">Create Post</a></li>
+            <li><img src="assets/images/logo-pencil.png" alt="My Posts" class="icon-image"><a href="myforums.html">My Posts</a></li>
+            <li><img src="assets/images/logo-pencil.png" alt="Collaborative Event List" class="icon-image"><a href="collablist.html">Collaborative Event List</a></li>
         </ul>
     </div>
     <div class="containerForum">
@@ -121,5 +133,15 @@
     };
 </script>
 <script src="/assets/js/event/events.js"></script>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -42,6 +42,19 @@
       </head>
 
 <body class="forum">
+              <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -62,8 +75,9 @@
                         <!-- ***** Search End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="browse.html">Browse</a></li>
+                            <li><a href="forumhome.html" class="active">Community</a></li>
                             <li><a href="details.html">Details</a></li>
                             <li><a href="streams.html">Streams</a></li>
                             <li><a href="login.html">Sign In</a></li>
@@ -80,9 +94,9 @@
       <div class="sidebar">
         <h2>User Actions</h2>
         <ul>
-            <li><a href="createpost.html">Create Post</a></li>
-            <li><a href="myforums.html">My Posts</a></li>
-            <li><a href="collablist.html">Collaborative Event List</a></li>
+            <li><img src="assets/images/logo-pencil.png" alt="Create Post" class="icon-image"><a href="createpost.html">Create Post</a></li>
+            <li><img src="assets/images/logo-pencil.png" alt="My Posts" class="icon-image"><a href="myforums.html">My Posts</a></li>
+            <li><img src="assets/images/logo-pencil.png" alt="Collaborative Event List" class="icon-image"><a href="collablist.html">Collaborative Event List</a></li>
           </ul>
     </div>
     <div class="containerForum">
@@ -92,7 +106,7 @@
         <div class="topic-container">
             <!--Original thread-->
             <div class="head">
-                <div class="forumtitle">Can't wait for the Ado concert!</div>
+                <h4>Can't wait for the Ado concert!</h4>
             </div>
 
             <div class="body">
@@ -102,6 +116,10 @@
                 </div>
                 <div class="content">
                     Super excited to finally meet her! Who else is going?
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <div class="comment">
                         <button onclick="toggleCommentArea('comment-area-1')">Comment</button>
                     </div>
@@ -124,10 +142,9 @@
                     <img src="assets/images/profile.jpg" alt="">
                 </div>
                 <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
+                    Planning to go there, but I might be late. Hope I can still catch the show.
+                    <br>
+                    <br>
                     <br>
                     <br>
                     <div class="comment">
@@ -151,12 +168,9 @@
                     <img src="assets/images/profilepic.jpg" alt="">
                 </div>
                 <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
+                    I'm going to the concert too! Can't wait to see her perform live!
                     <br>
-                    <br>
+                    <br><br><br>
                     <div class="comment">
                         <button onclick="toggleCommentArea('comment-area-3')">Comment</button>
                     </div>
@@ -191,6 +205,15 @@ function toggleCommentArea(commentAreaId) {
                 }, 500); // Adjust this delay to match the animation duration
             }
         }
-    </script>
+    </script>        <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>
