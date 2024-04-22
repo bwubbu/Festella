@@ -68,7 +68,7 @@
                         <li><a href="forumhome.html">Community</a></li>
                         <li><a href="details.html">Details</a></li>
                         <li><a href="vendor-main.html">Vendors</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile.jpg" alt=""></a></li>
+                        <li><a href="login.html">Sign In</a></li>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -182,6 +182,14 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
 
+  <!-- Script to display pop-up after redirection -->
+  <script>
+    // Check if the referrer URL is payment.html
+    const referrer = document.referrer;
+    if (referrer.includes("payment.html")) {
+      alert("Don't forget to review the event");
+    }
+  </script>
 
   // Get the event data from the database
   <script src="/assets/js/event/events.js"></script>

@@ -98,6 +98,16 @@ h4 {
   margin-bottom: 10px;
 }
 
+.marginText {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.marginText2 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
 ul {
   margin-bottom: 0px;
 }
