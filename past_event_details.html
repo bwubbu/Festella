@@ -10,6 +10,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/Event-Review.css">
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/main-style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
@@ -175,6 +176,52 @@
 
         <!-- ***** Gallery End ***** -->
 
+        <!-- ***** Other Start ***** -->
+        <div class="other-games">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Event Reviews</em></h4>
+              </div>
+            </div>
+            <div class="container-event-review">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <section id="review-list">
+                          <div id="review-sort">
+                              <label for="sort-review"><p>Sort By:</p></label><br>
+                              <select id="sort-review" name="sort">
+                                  <option id="sort-review-lowest" value="lowest-rated">Lowest Rated</option>
+                                  <option id="sort-review-recent" value="most-recent">Most Recent</option>
+                                  <option id="sort-review-highest" value="highest-rated">Highest Rated</option>
+                              </select>
+                          </div>
+                          <div id="reviews" class="reviews-container">
+                              <!-- Reviews will be populated here -->
+                          </div>
+                      </section>
+          
+                      <section id="review-form">
+                          <h4>Share your experiences here</h4><br>
+                          <form id="submit-review-form">
+                              <label for="star-rating"><p>Rating:</p></label>
+                              <div class="rating fa fa-star" align="center"><h1 align="center"><font color = "#a0a0a0">0</font></h1></div><br>
+                              <label for="review"><p>Review:</p></label>
+                              <textarea id="review-text" name="review" rows="4" required></textarea><br><br>
+                              <label for="images" class="label"><p>Upload Images:</p></label>
+                              <span style="color: #666666"><input type="file" id="images" name="images" accept="image/*" multiple></span><br>
+                              <label for="videos" class="label"><p>Upload Videos:</p></label>
+                              <span style="color: #666666"><input type="file" id="videos" name="videos" accept="video/*"></span><br><br>
+                              <button type="submit" class="submit"><p>Submit Review</p></button>
+                          </form>
+                      </section>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+        <!-- ***** Other End ***** -->
+
 
         </div>
       </div>
@@ -203,6 +250,7 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/event/past_eventDetails.js"></script>
+  <script src="assets/js/event/event-review.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
