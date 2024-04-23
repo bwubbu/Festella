@@ -328,3 +328,22 @@ Pre-loader Style
     background: #e75e8d;
     border-radius: 50%;
 }
+
+.marginText {
+    margin-bottom: 15px;
+  }
+
+#saveChangesBtn {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#saveChangesBtn:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+}
