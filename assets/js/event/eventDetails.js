@@ -3,7 +3,7 @@ const events = [
         id: 1,
         name: "Ado First Wish",
         category: "Concert",
-        rating: 4.8,
+        rating: 250,
         downloads: "2.3M",
         images: [
             "assets/images/details/Ado_Left.jpg",
@@ -23,7 +23,7 @@ const events = [
         id: 2,
         name: "Coldplay",
         category: "Concert",
-        rating: 4.5,
+        rating: 141,
         downloads: "1.8M",
         images: [
             "assets/images/details/Coldplay_Left.jpeg",
