@@ -1582,7 +1582,7 @@ Profile Style
 
 .main-profile ul {
   border-radius: 23px;
-  padding: 30px;
+  padding: 5px;
   background-color: #27292a;
 }
 
@@ -1590,7 +1590,7 @@ Profile Style
   width: 100%;
   font-size: 14px;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding-bottom: 20px;
   border-bottom: 1px solid #666;
 }
@@ -2788,3 +2788,6 @@ a.forum {
   color: #666;
   background-color: transparent;
 }
+
+
+

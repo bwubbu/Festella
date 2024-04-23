@@ -93,18 +93,18 @@ function initSearchFunctionality() {
         }
   
         // Create column for event
-        const col = document.createElement('div');
-        col.className = 'col-lg-3 col-sm-6';
-        col.innerHTML = `
-          <div class="item" onclick="redirectToEventDetails(${events[i].id})">
-            <img src="${events[i].image}" alt="">
-            <h4>${events[i].name}<br><span>${events[i].category}</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> ${events[i].rating}</li>
-              <li><i class="fa fa-ticket"></i> ${events[i].downloads}</li>
-            </ul>
-          </div>
-        `;
+      const col = document.createElement('div');
+      col.className = 'col-lg-3 col-sm-6';
+      col.innerHTML = `
+        <div class="item" onclick="redirectToEventDetails(${events[i].id})">
+          <img src="${events[i].image}" alt="">
+          <h4>${events[i].name}<br><span>${events[i].category}</span></h4>
+          <ul style="margin-top: 10px;">
+            <li  style="padding-bottom: 0px;"><i class="fa fa-eye"></i> ${events[i].rating}</li>
+            <li><i class="fa fa-ticket"></i> ${events[i].downloads}</li>
+          </ul>
+        </div>
+      `;
   
         // Append column to row
         row.appendChild(col);
