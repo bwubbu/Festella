@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image: "assets/images/event/Ado.jpeg",
                 title: "Can't wait for the Ado concert!",
                 description: "Super excited to finally meet her! Who else is going?",
-                author: "farhan",
+                author: "Rudzaidan",
                 date: "12 Dec 2020",
                 upvotes: 20,
                 replies: 7
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image: "assets/images/event/Cold.jpg",
                 title: "Is it true Coldplay is coming to Malaysia?",
                 description: "After all the rumors, is it finally happening? Can't wait!",
-                author: "Lutfi",
+                author: "Rudzaidan",
                 date: "12 Dec 2020",
                 upvotes: 32,
                 replies: 12
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image: "assets/images/event/Taylor.jpeg",
                 title: "Day 2 of Taylor Swift's Eras Tour!",
                 description: "First day was a total blast! Can't wait for today's show!",
-                author: "farhan",
+                author: "Rudzaidan",
                 date: "13 Dec 2020",
                 upvotes: 25,
                 replies: 10
