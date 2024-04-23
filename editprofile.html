@@ -97,17 +97,18 @@
                 <div class="main-profile">
                   <div class="row">
                     <div class="col-lg-7 align-self-center">
+                      <form id="profileForm">
                         <div class="main-info header-text">
                           <h4>Change Username</h4>
                           <p>Enter your new username here.</p>
-                          <input type="text" placeholder="Username"/>
+                          <input type="text" id="username" placeholder="Username"/>
                         </div>
                         <div class="clips">
-                        <div class="main-info header-text">
-                          <h4>Change About Me</h4>
-                          <p>Enter your new About Me here.</p>
-                          <input type="text" placeholder="About me"/>
-                        </div>
+                          <div class="main-info header-text">
+                            <h4>Change About Me</h4>
+                            <p>Enter your new About Me here.</p>
+                            <input type="text" id="aboutMe" placeholder="About me"/>
+                          </div>
                         </div>
                         <div class="clips">
                         <div class="main-info header-text">
@@ -126,20 +127,13 @@
                           <div class="clips">
                             <div class="main-info header-text">
                               <h4>Change Profile Picture</h4>
+                              <div class="dropbox">
+                                <input type="file" id="profilePic" name="avatar" accept="image/*" class="input-file">
+                                <p>Drop image here or click to upload</p>
+                              </div>
                             </div>
-                          <div class="dropbox">
-                            <input type="file" name="avatar" accept="image/*" class="input-file"> <p data-v-5f9057fc="">Drop image here or click to upload</p></div>
-                            <div class="avatar" data-src="assets/images/profile.jpg" lazy="loaded" style="background-image: url(&quot;assets/images/profile.jpg&quot;);"></div>
-                            </div>
-                          </div>
-              <!-- Center the button -->
-              <div class="row">
-                <div class="col-lg-12 text-center">
-                  <div class="main-border-button">
-                    <a href="profile.html" class="btn btn-primary marginText">Save Changes</a>
-                  </div>
-                </div>
-              </div>
+                            <button type="submit" id="saveChangesBtn">Save Changes</button>
+                          </form>
                           </div>
                           </div>
                         </div>
@@ -171,7 +165,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="profile_update.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/tabs.js"></script>
